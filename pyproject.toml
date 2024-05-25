@@ -7,7 +7,17 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+gymnasium = {extras = ["mujoco"], version = "^0.29.1"}
+mujoco = "<3"
+moviepy = "^1.0.3"
+torch = "^2.2.2"
+botorch = "^0.11.0"
+matplotlib = "^3.9.0"
+pandas = "^2.2.2"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
 
 [build-system]
 requires = ["poetry-core"]
